@@ -10,7 +10,7 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "丘比女王のBlog",
 	subtitle: "丘比女王的博客",
-	lang: "zh-CN", // Language code, e.g. 'en', 'zh-CN', 'ja', etc.
+	lang: "zh_CN", // Language code, e.g. 'en', 'zh-CN', 'ja', etc.
 	themeColor: {
 		hue: 360, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
@@ -58,21 +58,16 @@ export const profileConfig: ProfileConfig = {
 	bio: "NullReferenceException: Object reference not set to an instance of an object",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+			name: "BiliBili",
+			icon: "fa6-brands:bilibili", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
-		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			url: "https://space.bilibili.com/601317382",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			url: "https://github.com/klkl8898",
 		},
 	],
 };
