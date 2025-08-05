@@ -1,5 +1,5 @@
 # About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+啊我去这是什么模板怎么这么好看什么居然是fuwari**啃一口啃一口啃一口啃一口啃一口啃一口啃一口啃一口**
 
 ::github{repo="saicaca/fuwari"}
 
