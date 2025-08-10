@@ -9,6 +9,8 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "Kl_Queen's Blog",
+	description:
+		"分享编程技术、网站部署、游戏开发、Unity引擎、C#技术、网络信息等内容的个人博客，专注于Unity游戏编程开发，作者为Kl_Queen/丘比女王",
 	subtitle: "丘比女王的博客",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh-CN', 'ja', etc.
 	themeColor: {
