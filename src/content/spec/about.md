@@ -1,9 +1,39 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于 - Kl_Queen's Blog
+
+啊我去这是什么模板怎么这么好看什么居然是fuwari**啃一口啃一口啃一口啃一口啃一口啃一口啃一口啃一口**
 
 ::github{repo="saicaca/fuwari"}
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+本站为静态博客,采用Fuwari框架，并使用MIT协议开源于Github。静态意味着您的个人信息或任何数据**不会存储至服务器**
+
+尽管本网站本身是静态的，但使用了以下**第三方服务**，这些服务<u>可能会收集和处理您的信息</u>：
+
+**Netlify**
+
+- 可能收集的信息：IP 地址、访问日志、性能数据
+- 用途：网站托管、部署服务
+- 隐私政策：[Netlify 隐私政策](https://www.netlify.com/privacy/)
+
+# 关于【丘比女王】
+
+我是**合肥市五十中学**天鹅湖校区的准**八年级**学生，爱好编程，喜欢使用Unity引擎和C#语言制作游戏
+
+与我有关的媒体账号（如Bilibili，Github）您可以在左侧作者卡片处找到并查看
+
+## 喜欢的游戏：
+
+- Undertale-传说之下
+
+- Deltarune-三角符文
+
+- SANABI-这个译名太土了算了不写了
+
+- KATANA-ZERO-武士零
+
+- LastCommand-最后指令
+
+## 最近项目：
+
+我正在着手一款RPG+弹幕射击游戏《AnotherMe》，参考了东方Project与三角符文的玩法和内容。玩家要在游戏中操控两个方向相反自机进行躲避弹幕。
+
+该游戏以剧情为主，共有五章，计划于2026/8完工。详情见本人Bilibili账号。
