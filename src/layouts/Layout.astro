@@ -148,6 +148,8 @@ const bannerOffset =
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
 		<script defer src="https://cloud.umami.is/script.js" data-website-id="a52e2cf1-2531-4f0a-bc1f-e03e9892d17f"></script>
 		<script defer src="https://umami.2x.nz/script.js" data-website-id="a52e2cf1-2531-4f0a-bc1f-e03e9892d17f"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wpwebplayer@1.1.5/min-css.css">
+		<script src="https://cdn.jsdelivr.net/npm/wpwebplayer@1.1.5/min-js.js"></script>
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
@@ -157,7 +159,18 @@ const bannerOffset =
 
 		<!-- increase the page height during page transition to prevent the scrolling animation from jumping -->
 		<div id="page-height-extend" class="hidden h-[300vh]"></div>
-		    
+		    <wp-music-player
+    src="https://tc.z.wiki/autoupload/f/fuaMVbgVWIrwTCzmFqZNP412_FRYNb81z6UPhMWD8iI/20250822/YCgS/obj-wo3DlMOGwrbDjj7DisKw-31051170582-e738-7480-7adb-38f9acef5a34f058d810f75b0412033b.mp3"
+    title="Mischievous Step"
+    artist="Blue Archive"
+    cover="https://tc-new.z.wiki/autoupload/f/fuaMVbgVWIrwTCzmFqZNP412_FRYNb81z6UPhMWD8iI/20250822/Ohgm/1600X1124/764238.jpg/webp"
+    autoplay="true"
+    loop="true"
+    volume="0.1"
+    fixed="true"
+    mini="true"
+    theme="#00ccffff">
+  </wp-music-player>
 	</body>
 </html>
 
