@@ -34,7 +34,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		 {
-		   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
+		   src: 'https://tc.z.wiki/autoupload/f/fuaMVbgVWIrwTCzmFqZNP412_FRYNb81z6UPhMWD8iI/20250822/PmOq/200X200/icon.png/webp',    // Path of the favicon, relative to the /public directory
 		   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
 		   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		 }
