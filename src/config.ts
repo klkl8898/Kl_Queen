@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "丘比女王的博客",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh-CN', 'ja', etc.
 	themeColor: {
-		hue: 360, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+		hue: 260, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
 	},
 	banner: {
@@ -34,9 +34,9 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		 {
-		   src: 'https://tc.z.wiki/autoupload/f/fuaMVbgVWIrwTCzmFqZNP412_FRYNb81z6UPhMWD8iI/20250822/PmOq/200X200/icon.png/webp',    // Path of the favicon, relative to the /public directory
-		   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		   src: 'https://tc.z.wiki/autoupload/f/fuaMVbgVWIrwTCzmFqZNP412_FRYNb81z6UPhMWD8iI/20250822/PmOq/200X200/icon.png',    // Path of the favicon, relative to the /public directory
+		  // theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+		 //  sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		 }
 	],
 };
