@@ -140,16 +140,9 @@
     height: var(--collapsedHeight);
 }
 @font-face {
-    font-family:'LXGWWenKaiScreen';
-    src: url('./font/LXGWWenKaiScreen.ttf') format('ttf');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'MiSans';
-    src: url('/font/MiSans-Normal.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Kai";
+  src: url("/font/LXGWWenKaiGBScreen.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
