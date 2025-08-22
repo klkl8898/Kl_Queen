@@ -55,9 +55,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "https://tc.z.wiki/autoupload/f/fuaMVbgVWIrwTCzmFqZNP412_FRYNb81z6UPhMWD8iI/20250822/nTAe/832X832/avatar.png/webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "丘比女王",
-	bio: "NullReferenceException: Object reference not set to an instance of an object",
+	bio: "你抚琵笆奏琴弦😍我坐戏子楼台前😏😏😏",
 	links: [
 		{
 			name: "BiliBili",
