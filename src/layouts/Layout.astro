@@ -150,6 +150,7 @@ const bannerOffset =
 		<script defer src="https://umami.2x.nz/script.js" data-website-id="a52e2cf1-2531-4f0a-bc1f-e03e9892d17f"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wpwebplayer@1.1.5/min-css.css">
 		<script src="https://cdn.jsdelivr.net/npm/wpwebplayer@1.1.5/min-js.js"></script>
+		
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
@@ -270,7 +271,10 @@ function disableAnimation() {
 	}
 }
 */
-
+function initCommentComponent() {
+  const event = new Event("loadComment");
+  document.dispatchEvent(event);
+}
 const bannerEnabled = !!document.getElementById('banner-wrapper')
 
 function setClickOutsideToClose(panel: string, ignores: string[]) {
@@ -383,6 +387,7 @@ function init() {
 	loadTheme();
 	loadHue();
 	initCustomScrollbar();
+	initCommentComponent();
 	showBanner();
 }
 
@@ -569,6 +574,7 @@ const setup = () => {
 		"content:replace",
 		() => {
 			lightbox?.destroy?.()
+			initCommentComponent();
 		},
 		{ before: true },
 	)
