@@ -100,9 +100,6 @@ html.dark {
     @apply inline !align-bottom;
   }
 
-  a {
-    @apply link link-underline text-[var(--primary)] font-medium;
-  }
 
   .tk-ruser {
     @apply no-underline;
