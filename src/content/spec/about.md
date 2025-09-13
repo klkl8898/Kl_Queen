@@ -1,23 +1,54 @@
-# 关于 - Kl_Queen's Blog
+# About This Site
 
-啊我去这是什么模板怎么这么好看什么居然是fuwari**啃一口啃一口啃一口啃一口啃一口啃一口啃一口啃一口**
+This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
 
-::github{repo="saicaca/fuwari"}
+::github{repo="matsuzaka-yuki/Mizuki"}
 
-本站为静态博客,采用Fuwari框架，并使用MIT协议开源于Github。静态意味着您的个人信息或任何数据**不会存储至服务器**
+## 🌟 Theme Features
 
-尽管本网站本身是静态的，但使用了以下**第三方服务**，这些服务<u>可能会收集和处理您的信息</u>：
+### 🎨 Design & User Experience
+- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
+- **Fully Responsive** - Optimized for all devices from mobile to desktop
+- **Dark/Light Mode** - Automatic theme switching with smooth transitions
+- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
+- **Smooth Animations** - Fluid page transitions and interactive elements
 
-**Netlify**
+### 🔍 Content & Search
+- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
+- **Enhanced Markdown** - Extended syntax with code highlighting and math support
+- **Interactive Table of Contents** - Auto-scroll navigation for long articles
+- **RSS Feed Generation** - Stay updated with automatic feed generation
+- **Reading Time Estimation** - Know how long articles take to read
+- **Post Categorization** - Organize content with tags and categories
 
-- 可能收集的信息：IP 地址、访问日志、性能数据
-- 用途：网站托管、部署服务
-- 隐私政策：[Netlify 隐私政策](https://www.netlify.com/privacy/)
+### 🌐 Internationalization
+- **Multi-language Support** - Real-time translation capabilities
+- **Auto Language Detection** - Detects user preferences automatically
+- **Client-side Translation** - Powered by Edge Translate technology
+- **10+ Languages Supported** - EN, ZH-CN, ZH-TW, JA, KO, ES, TH, VI, ID, TR
 
-# 关于【丘比女王】
+### 📱 Special Pages
+- **Anime Tracking Page** - Track your anime watching progress with ratings
+- **Friends Links Page** - Showcase friend websites with beautiful cards
+- **Diary/Moments Page** - Share life moments like social media posts
+- **Archive Page** - Organized timeline view of all posts
+- **About Page** - Customizable personal introduction (this page!)
 
-我是**合肥市五十中学**天鹅湖校区的准**八年级**学生，爱好编程，喜欢使用Unity引擎和C#语言制作游戏
+### 🛠 Technical Features
+- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
+- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
+- **Image Optimization** - PhotoSwipe gallery with lazy loading
+- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
+- **Performance Optimized** - Fast loading with caching and optimization
+- **Comment System Ready** - Integration support for Twikoo comments
 
-与我有关的媒体账号（如Bilibili，Github）您可以在左侧作者卡片处找到并查看
+### 🎯 Advanced Markdown Features
+- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
+- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
+- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
+- **Syntax Highlighting** - Advanced code highlighting with line numbers
+- **Copy Code Buttons** - Easy code copying functionality
 
-# 
+---
+
+*Built with ❤️ using Astro and inspired by modern web design principles.*

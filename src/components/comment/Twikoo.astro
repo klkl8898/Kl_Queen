@@ -1,30 +1,82 @@
 ---
+import { commentConfig } from "@/config";
+
 interface Props {
-  path: string;
+	path: string;
 }
 
 const config = {
-  el: "#comment",
-  path: Astro.props.path,
+	...commentConfig.twikoo,
+	el: "#tcomment",
+	path: Astro.props.path,
 };
 ---
 
-<!-- 简化了配置部分的代码，实际上可以把配置文件统一写入fuwari的配置文件统一读取 -->
-<div id="comment"></div>
-<script define:vars={{ config }}>
-  function loadTwikoo() {
-    const script = document.createElement("script");
-    script.src =
-      "https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js";
-    script.defer = true;
-    script.onload = () => {
-      twikoo.init({
-        ...config,
-        envId: "https://twikoo.klqn.top", // 你的envId，获取方法请参照Twikoo文档
-        lang: "zh-CN", // 评论区语言
-      }); // 传入配置信息
-    };
-    document.body.appendChild(script);
+<div id="tcomment"></div>
+<script is:inline src="/scroll-protection.js"></script>
+<script is:inline src="/assets/js/twikoo.all.min.js"></script>
+<script is:inline define:vars={{ config }}>
+  // 获取当前页面路径
+  function getCurrentPath() {
+    const pathname = window.location.pathname;
+    return pathname.endsWith('/') && pathname.length > 1 ? pathname.slice(0, -1) : pathname;
   }
-  document.addEventListener("loadComment", loadTwikoo, { once: true }); // 监听加载评论事件，但是我们只能监听一次，从而避免多次触发。
+  
+  // 动态创建配置对象
+  function createTwikooConfig() {
+    return {
+      ...config,
+      path: getCurrentPath(),
+      el: '#tcomment'
+    };
+  }
+  
+  // 初始化 Twikoo
+  function initTwikoo() {
+    if (typeof twikoo !== 'undefined') {
+      const commentEl = document.getElementById('tcomment');
+      if (commentEl) {
+        commentEl.innerHTML = '';
+        
+        const dynamicConfig = createTwikooConfig();
+        console.log('[Twikoo] 初始化配置:', dynamicConfig);
+        
+        twikoo.init(dynamicConfig).then(() => {
+          console.log('[Twikoo] 初始化完成');
+        }).catch((error) => {
+          console.error('[Twikoo] 初始化失败:', error);
+        });
+      }
+    } else {
+      // 如果 Twikoo 未加载，稍后重试
+      setTimeout(initTwikoo, 500);
+    }
+  }
+  
+  // 页面加载时初始化
+  document.addEventListener('DOMContentLoaded', initTwikoo);
+  
+  // Swup 页面切换后重新初始化
+  if (window.swup && window.swup.hooks) {
+    window.swup.hooks.on('content:replace', function() {
+      setTimeout(initTwikoo, 200);
+    });
+  } else {
+    document.addEventListener('swup:enable', function() {
+      if (window.swup && window.swup.hooks) {
+        window.swup.hooks.on('content:replace', function() {
+          setTimeout(initTwikoo, 200);
+        });
+      }
+    });
+  }
+  
+  // 自定义事件监听
+  document.addEventListener('mizuki:page:loaded', function() {
+    const commentEl = document.getElementById('tcomment');
+    if (commentEl) {
+      console.log('[Twikoo] 通过自定义事件重新初始化');
+      initTwikoo();
+    }
+  });
 </script>
