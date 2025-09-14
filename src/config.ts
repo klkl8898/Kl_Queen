@@ -88,7 +88,7 @@ export const siteConfig: SiteConfig = {
 			title: "KL_Queen's Blog", // 主页横幅主标题
 
 			subtitle: [
-				"一个基于Mizuki主题的博客",
+				"闭上眼睛，你就会从梦中醒来",
 				"永远相信美好的事情即将发生",
 			],
 			typewriter: {
