@@ -55,7 +55,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "https://lsky.klqn.top/i/2025/10/09/68e7b22a51b2f.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "丘比女王",
 	bio: "闭上眼睛，你就会从梦中醒来",
 	links: [
